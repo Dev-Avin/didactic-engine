@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from './pages/Home.jsx';
 import { Route, Routes } from 'react-router';
 import Leaderboard from './pages/Leaderboard.jsx';
 import Dud from './pages/Dud.jsx';
@@ -10,7 +9,6 @@ function App() {
       <>
         <Navbar/>
         <Routes>
-        <Route path="/"  element={<Home />} />
         <Route path="/leaderboard"  element={<Leaderboard />} />
              <Route path='*' element={<Dud/>}/>// Default path for any non visitable link
         </Routes>
