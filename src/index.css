@@ -1,0 +1,117 @@
+* , body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}       
+.nav{
+ display: flex;
+ flex-direction:column ;
+ justify-content: start;
+ align-items: center;
+ width: 100vw;
+}
+.navMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 15vh;
+    flex-direction: row;    
+}
+.navMain img{
+    height: 80%;
+}
+.navMainLinks img{
+    height: 60%;
+}
+
+
+.navMainLinks{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 220px;
+    text-wrap: wrap;
+    /* width: 20%; */
+    height: 10vh;
+    flex-direction: row;
+}
+.navLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 90%;
+    height: 10vh;
+    flex-direction: row;
+    background-color: rgb(208, 255, 243);
+}
+.hamburger{
+    display: none;
+}
+.navLinkContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 0;
+    flex-direction: row;
+    background-color: rgb(208, 255, 243);
+}
+.navLink{
+    padding: 10px;
+    margin: 0;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 15px;
+    font-weight: bold; 
+    cursor: pointer;
+  transition: all 0.5s ease;
+}
+.navLink:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: rgb(96, 218, 187);
+}
+.navLinkContainerMobile{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 0;
+    flex-direction: row;
+    background-color: rgb(208, 255, 243);
+}
+@media screen and (max-width: 600px) {
+    .hamburger{
+        display: flex;
+    }
+    .navMainLinkContainer{
+      flex-direction: row;
+    }
+    .navLinkContainer{
+     display: none;
+    }
+    .navLinkContainerMobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .navLinks{
+        height: 100%;
+        overflow: scroll;
+    }
+    .navMain{
+        height: 10vh;
+    }
+    .navMainLinks{
+        display: none;
+    }
+}
